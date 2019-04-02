@@ -1,0 +1,24 @@
+base_url: https://staging-1.splashmath.com
+
+teacher:
+  role: teacher
+  username: 'udit.jaiswal+124nf@splashmath.com'
+
+parent:
+  role: parent
+  username: 'udit.jaiswal+53n24@splashmath.com'
+
+student:
+  role: student
+  username: test1107
+  password: lego9
+
+student_parent:
+  role: student
+  username: 'udit.jaiswal+53n24@splashmath.com'
+  student: Class_1
+
+premium_teacher:
+  role: teacher
+  username: 'udit.jaiswal+124nf@splashmath.com'
+  class: Class 1

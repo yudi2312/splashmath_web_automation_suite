@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>SM Web Automation Results</title><link rel="icon" href="https://reportbuilder.rajatthareja.com/rb.ico">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
+<link href="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.8/css/report.builder.min.css" rel="stylesheet">
+</head><body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script><header class="indigo lighten-5">
+<div class="row indigo lighten-1">
+<div class="col m6 hide-on-small-only">
+<h5 class="truncate white-text tooltipped" data-tooltip="SM Web Automation Results">SM Web Automation Results</h5>
+</div><div class="col m6 s12 indigo lighten-1">
+<ul class="tabs indigo lighten-1 row" style="overflow-x: hidden">
+<li class="tab col s3">
+<a class="indigo lighten-3 active blue-text waves-effect waves-light tooltipped" data-tooltip="Results Overview" href="#overview"><i class="material-icons">assessment</i> Overview</a>
+</li>
+<li class="tab col s3">
+<a class="indigo lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios by Features" href="#features"><i class="material-icons">view_headline</i> Features</a>
+</li>
+<li class="tab col s3">
+<a class="indigo lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios Summary Table" href="#summary"><i class="material-icons">view_comfy</i> Summary</a>
+</li>
+<li class="tab col s3">
+<a class="indigo lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Failed Scenarios" href="#errors"><i class="material-icons">bug_report</i> Errors</a>
+</li>
+</ul>
+</div>
+</div>
+</header>
+<div id="g0f0s0" class="modal modal-fixed-footer">
+<div class="modal-content"><h5>Verify show student username setting is displayed for premium teacher (47.765s)</h5>
+features/gherkin/teacher/classroom_settings.feature:4
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> the user login as premium teacher (7.846s)</li>
+<li class="collection-item step passed">
+<b>When </b> the application navigates to the teacher home page (0.000s)</li>
+<li class="collection-item step passed">
+<b>And </b> the user clicks on option dropdown icon (3.737s)</li>
+<li class="collection-item step passed">
+<b>And </b> the user clicks on classroom setting icon (2.353s)</li>
+<li class="collection-item step passed">
+<b>Then </b> the show student username setting should be displayed (0.029s)</li>
+<li class="collection-item step passed">
+<b>And </b> student username and password should be displayed when setting is turned on (12.206s)</li>
+<li class="collection-item step passed">
+<b>And </b> student username and password should not be displayed when setting is turned off (19.462s)</li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f1s0" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@teacher</div><div class="chip"><i class="material-icons rotate-45">label</i>@login</div><h5>Verify user is able to log-in as a teacher (22.386s)</h5>
+features/gherkin/login.feature:4
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> the user login as teacher (11.641s)</li>
+<li class="collection-item step passed">
+<b>Then </b> teacher dashboard should be displayed (6.335s)</li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f1s1" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@student</div><div class="chip"><i class="material-icons rotate-45">label</i>@login</div><h5>Verify student log-in from parent (27.668s)</h5>
+features/gherkin/login.feature:20
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> the user login as student_parent (12.079s)</li>
+<li class="collection-item step passed">
+<b>And </b> the user selects student on Select Account Page (7.614s)</li>
+<li class="collection-item step passed">
+<b>Then </b> student dashboard page should be displayed (4.930s)</li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f1s2" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@parent</div><div class="chip"><i class="material-icons rotate-45">label</i>@login</div><h5>Verify user is able to log-in as a parent (29.944s)</h5>
+features/gherkin/login.feature:9
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> the user login as parent (10.905s)</li>
+<li class="collection-item step passed">
+<b>And </b> the user clicks on parent icon (11.983s)</li>
+<li class="collection-item step passed">
+<b>Then </b> parent dashboard should be displayed (1.581s)</li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f1s3" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@student</div><div class="chip"><i class="material-icons rotate-45">label</i>@login</div><h5>Verify user is able to log-in as a student (20.580s)</h5>
+features/gherkin/login.feature:15
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> the user login as student (11.123s)</li>
+<li class="collection-item step passed">
+<b>Then </b> student dashboard should be displayed (5.273s)</li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f1s0').modal();$('#g0f1s1').modal();$('#g0f1s2').modal();$('#g0f1s3').modal();$('#g0f1s4').modal();});
+</script>
+<main class="indigo lighten-5">
+<div class="row"><div id="overview" class="col s12 indigo lighten-5">
+<div class="row">
+<div class="col m4 s12">
+<canvas id="featuresDoughnut" width="400" height="400"></canvas>
+<table id="metaDataFeatures" class="bordered">
+<tbody></tbody>
+</table>
+</div><div class="col m4 s12">
+<canvas id="scenariosDoughnut" width="400" height="400"></canvas>
+<table id="metaDataScenarios" class="bordered">
+<tbody></tbody>
+</table>
+</div><div class="col m4 s12">
+<table id="metaData" class="bordered">
+<tbody>
+<tr><th>Total Time</th><td>2m 28.34s</td></tr><tr>
+<th>User</th>
+<td>SPMUDITJ</td>
+</tr></tbody>
+</table>
+</div>
+</div></div><div id="features" class="col s12 indigo lighten-5 white-text">
+<ul class="featureList collapsible popout" data-collapsible="expandable">
+<li class="feature working">
+<div class="collapsible-header indigo lighten-1 waves-effect waves-light">
+<i class="material-icons">featured_play_list</i>
+<b>Feature</b>&nbsp;Classroom Setting for different teacher subscriptions&nbsp;(47.765s)
+</div><div class="collapsible-body indigo lighten-4">
+<ul class="collection scenarioList"><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s0">
+<b>Scenario</b> Verify show student username setting is displayed for premium teacher&nbsp;(47.765s)
+</a>
+</li></ul>
+</div>
+</li><li class="feature working">
+<div class="collapsible-header indigo lighten-1 waves-effect waves-light">
+<i class="material-icons">featured_play_list</i>
+<b>Feature</b>&nbsp;This feature consist of various login/sign-in scenarios&nbsp;(1m 40.58s)
+</div><div class="collapsible-body indigo lighten-4">
+<ul class="collection scenarioList"><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s0">
+<b>Scenario</b> Verify user is able to log-in as a teacher&nbsp;(22.386s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s1">
+<b>Scenario</b> Verify student log-in from parent&nbsp;(27.668s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s2">
+<b>Scenario</b> Verify user is able to log-in as a parent&nbsp;(29.944s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s3">
+<b>Scenario</b> Verify user is able to log-in as a student&nbsp;(20.580s)
+</a>
+</li></ul>
+</div>
+</li>
+</ul></div><div id="summary" class="col s12 indigo lighten-5">
+<table id="summaryTable" class="bordered indigo lighten-1 white-text" width="100%">
+<thead>
+<tr>
+<th class="hide-on-small-only">Feature</th>
+<th>Scenario</th>
+<th class="hide">Tags</th>
+<th>Status</th>
+<th class="hide-on-small-only">Error</th>
+</tr>
+</thead>
+<tbody><tr class="passed">
+<td class="hide-on-small-only">
+Classroom Setting for different teacher subscriptions
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s0">Verify show student username setting is displayed for premium teacher</a>
+</td><td class="hide"></td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+This feature consist of various login/sign-in scenarios
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f1s0">Verify user is able to log-in as a teacher</a>
+</td><td class="hide">
+@teacher. @login. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+This feature consist of various login/sign-in scenarios
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f1s1">Verify student log-in from parent</a>
+</td><td class="hide">
+@student. @login. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+This feature consist of various login/sign-in scenarios
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f1s2">Verify user is able to log-in as a parent</a>
+</td><td class="hide">
+@parent. @login. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+This feature consist of various login/sign-in scenarios
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f1s3">Verify user is able to log-in as a student</a>
+</td><td class="hide">
+@student. @login. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+</tbody>
+</table></div><div id="errors" class="col s12 indigo lighten-5">
+<ul class="errorList collapsible popout" data-collapsible="expandable"></ul></div>
+</div>
+</main><footer class="page-footer indigo lighten-4">
+<div class="footer-copyright indigo lighten-1">
+<div class="container">
+Happy Reporting!
+<a class="white-text text-lighten-4 right" href="https://reportbuilder.rajatthareja.com">Generated by Report Builder</a>
+</div>
+</div>
+</footer><script type="text/javascript" src="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.8/js/report.builder.min.js"></script></body>
+</html>

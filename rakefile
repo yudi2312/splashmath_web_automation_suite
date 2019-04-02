@@ -1,0 +1,21 @@
+require 'rubygems'
+require 'cucumber'
+
+
+# Cucumber::Rake::Task.new(:features) do |t|
+#   t.cucumber_opts = "--format pretty"
+# end
+#
+# Cucumber::Rake::Task.new(:jenkins) do |t|
+#   t.profile = "jenkins"
+# end
+
+task :test do
+  begin
+    sh "parallel_cucumber --group-by scenarios -o \"--profile=parallel\" features/"
+  ensure
+    sh "ruby report_build.rb"
+  end
+end
+
+

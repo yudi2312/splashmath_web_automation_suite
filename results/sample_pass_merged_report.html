@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Test Results</title><link rel="icon" href="https://reportbuilder.rajatthareja.com/rb.ico">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
+<link href="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.8/css/report.builder.min.css" rel="stylesheet">
+</head><body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script><header class="cyan lighten-5">
+<div class="row cyan lighten-1">
+<div class="col m6 hide-on-small-only">
+<h5 class="truncate white-text tooltipped" data-tooltip="Test Results">Test Results</h5>
+</div><div class="col m6 s12 cyan lighten-1">
+<ul class="tabs cyan lighten-1 row" style="overflow-x: hidden">
+<li class="tab col s3">
+<a class="cyan lighten-3 active blue-text waves-effect waves-light tooltipped" data-tooltip="Results Overview" href="#overview"><i class="material-icons">assessment</i> Overview</a>
+</li>
+<li class="tab col s3">
+<a class="cyan lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios by Features" href="#features"><i class="material-icons">view_headline</i> Features</a>
+</li>
+<li class="tab col s3">
+<a class="cyan lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios Summary Table" href="#summary"><i class="material-icons">view_comfy</i> Summary</a>
+</li>
+<li class="tab col s3">
+<a class="cyan lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Failed Scenarios" href="#errors"><i class="material-icons">bug_report</i> Errors</a>
+</li>
+</ul>
+</div>
+</div>
+</header>
+<div id="g0f0s0" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@teacher</div><div class="chip"><i class="material-icons rotate-45">label</i>@login</div><h5>Verify user is able to log-in as a teacher (20.345s)</h5>
+features/gherkin/login.feature:4
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> the user login as teacher (10.971s)</li>
+<li class="collection-item step passed">
+<b>Then </b> teacher dashboard should be displayed (5.564s)</li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s1" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@student</div><div class="chip"><i class="material-icons rotate-45">label</i>@login</div><h5>Verify student log-in from parent (24.099s)</h5>
+features/gherkin/login.feature:20
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> the user login as student_parent (10.757s)</li>
+<li class="collection-item step passed">
+<b>And </b> the user selects student on Select Account Page (5.746s)</li>
+<li class="collection-item step passed">
+<b>Then </b> student dashboard page should be displayed (3.602s)</li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s2" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@parent</div><div class="chip"><i class="material-icons rotate-45">label</i>@login</div><h5>Verify user is able to log-in as a parent (27.317s)</h5>
+features/gherkin/login.feature:9
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> the user login as parent (10.578s)</li>
+<li class="collection-item step passed">
+<b>And </b> the user clicks on parent icon (9.366s)</li>
+<li class="collection-item step passed">
+<b>Then </b> parent dashboard should be displayed (2.764s)</li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s3" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@student</div><div class="chip"><i class="material-icons rotate-45">label</i>@login</div><h5>Verify user is able to log-in as a student (17.831s)</h5>
+features/gherkin/login.feature:15
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> the user login as student (10.883s)</li>
+<li class="collection-item step passed">
+<b>Then </b> student dashboard should be displayed (3.731s)</li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f0s2').modal();$('#g0f0s3').modal();$('#g0f0s4').modal();});
+</script>
+<main class="cyan lighten-5">
+<div class="row"><div id="overview" class="col s12 cyan lighten-5">
+<div class="row">
+<div class="col m4 s12">
+<canvas id="featuresDoughnut" width="400" height="400"></canvas>
+<table id="metaDataFeatures" class="bordered">
+<tbody></tbody>
+</table>
+</div><div class="col m4 s12">
+<canvas id="scenariosDoughnut" width="400" height="400"></canvas>
+<table id="metaDataScenarios" class="bordered">
+<tbody></tbody>
+</table>
+</div><div class="col m4 s12">
+<table id="metaData" class="bordered">
+<tbody>
+<tr><th>Total Time</th><td>1m 29.59s</td></tr><tr>
+<th>user</th>
+<td>SPMUDITJ</td>
+</tr></tbody>
+</table>
+</div>
+</div></div><div id="features" class="col s12 cyan lighten-5 white-text">
+<ul class="featureList collapsible popout" data-collapsible="expandable">
+<li class="feature working">
+<div class="collapsible-header cyan lighten-1 waves-effect waves-light">
+<i class="material-icons">featured_play_list</i>
+<b>Feature</b>&nbsp;This feature consist of various login/sign-in scenarios&nbsp;(1m 29.59s)
+</div><div class="collapsible-body cyan lighten-4">
+<ul class="collection scenarioList"><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s0">
+<b>Scenario</b> Verify user is able to log-in as a teacher&nbsp;(20.345s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s1">
+<b>Scenario</b> Verify student log-in from parent&nbsp;(24.099s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s2">
+<b>Scenario</b> Verify user is able to log-in as a parent&nbsp;(27.317s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s3">
+<b>Scenario</b> Verify user is able to log-in as a student&nbsp;(17.831s)
+</a>
+</li></ul>
+</div>
+</li>
+</ul></div><div id="summary" class="col s12 cyan lighten-5">
+<table id="summaryTable" class="bordered cyan lighten-1 white-text" width="100%">
+<thead>
+<tr>
+<th class="hide-on-small-only">Feature</th>
+<th>Scenario</th>
+<th class="hide">Tags</th>
+<th>Status</th>
+<th class="hide-on-small-only">Error</th>
+</tr>
+</thead>
+<tbody><tr class="passed">
+<td class="hide-on-small-only">
+This feature consist of various login/sign-in scenarios
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s0">Verify user is able to log-in as a teacher</a>
+</td><td class="hide">
+@teacher. @login. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+This feature consist of various login/sign-in scenarios
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s1">Verify student log-in from parent</a>
+</td><td class="hide">
+@student. @login. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+This feature consist of various login/sign-in scenarios
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s2">Verify user is able to log-in as a parent</a>
+</td><td class="hide">
+@parent. @login. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+This feature consist of various login/sign-in scenarios
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s3">Verify user is able to log-in as a student</a>
+</td><td class="hide">
+@student. @login. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+</tbody>
+</table></div><div id="errors" class="col s12 cyan lighten-5">
+<ul class="errorList collapsible popout" data-collapsible="expandable"></ul></div>
+</div>
+</main><footer class="page-footer cyan lighten-4">
+<div class="footer-copyright cyan lighten-1">
+<div class="container">
+Happy Reporting!
+<a class="white-text text-lighten-4 right" href="https://reportbuilder.rajatthareja.com">Generated by Report Builder</a>
+</div>
+</div>
+</footer><script type="text/javascript" src="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.8/js/report.builder.min.js"></script></body>
+</html>

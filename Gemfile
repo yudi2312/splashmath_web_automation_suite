@@ -1,0 +1,13 @@
+source 'https://rubygems.org'
+
+gem 'cucumber'
+gem 'faker'
+gem 'fig_newton'
+gem 'google-api-client'
+gem 'nokogiri'
+gem 'page-object'
+gem 'parallel_tests'
+gem 'rake'
+gem 'report_builder'
+gem 'rspec-expectations'
+gem 'watir'

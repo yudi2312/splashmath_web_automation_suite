@@ -1,0 +1,2 @@
+default: FIG_NEWTON_FILE=staging_1.yml --format progress --format html --out=results/features_report.html
+parallel: FIG_NEWTON_FILE=staging_1.yml -f pretty -f json --out=results/JSON/results_<%= ENV['TEST_ENV_NUMBER'].to_s %>.json
